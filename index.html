@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+
+  <body>
+
+      <!-- form -->
+
+      <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+
+          <!-- first name -->
+          <div class="col-md-6">
+            <label for="first_name" class="form-label">First name</label>
+            <input type="text" class="form-control first_name" id="first_name" name="frist_name" placeholder="Enter your first name name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div id="first_name" class="invalid-feedback">
+              Enter your first name
+            </div>
+          </div>
+
+          <!-- last name -->
+          <div class="col-md-6">
+            <label for="last_name" class="form-label">Last name</label>
+            <input type="text" class="form-control last_name" id="last_name" name="last_name" placeholder="Enter your last name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div id="last_name" class="invalid-feedback">
+              Enter your last name
+            </div>
+          </div>
+
+          <!-- email name -->
+          <div class="col-md-12">
+            <label for="email" class="form-label">Email Address </label>
+            <input type="text" class="form-control email" id="email" name="email" placeholder="Enter your email address" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div id="email" class="invalid-feedback">
+              Enter your email address 
+            </div>
+          </div>
+
+          <!-- City name -->
+         <div class="col-md-6">
+          <label for="city_name" class="form-label">City Name</label>
+          <input type="text" class="form-control city_name" id="city_name" name="city_name" required>
+          <div class="valid-feedback">
+              Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <!-- Zip Code -->
+        <div class="col-md-6">
+          <label for="zip_code" class="form-label">Zip Code</label>
+          <input type="text" class="form-control zip_code" id="zip_code" required>
+          <div class="valid-feedback">
+              Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+
+
+        <!-- check box -->
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+
+        <!-- submit button -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+
+        </form>
+      </div>
+
+    <!-- script link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
